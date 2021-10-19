@@ -1,5 +1,20 @@
 {
 	"codeLens.enable": true,
+ 	"suggest.noselect": false,
+	"diagnostic.errorSign": "✘",
+	"diagnostic.warningSign": "!",
+	"diagnostic.infoSign": "?",
+	"diagnostic.checkCurrentLine": true,
+	"coc.preferences.formatOnSaveFiletypes": [
+		"javascript",
+		"html",
+		"json",
+		"css",
+		"scss",
+		"go"
+	],
+
+	"coc.preferences.hoverTarget": "float",
 	"languageserver": {
 		"golang": {
 			"command": "gopls",
@@ -16,39 +31,11 @@
 			"L": ["wait", "expandable?", "expand", "open"]
 		}
 	},
-	"markdownlint.config": {
-		"default": true,
-		"MD001": false,
-		"MD007": false,
-		"MD012": false,
-		"MD013": false,
-		"MD024": false,
-		"MD032": false,
-		"MD033": false,
-		"MD041": false
-	},
 	"go.goplsOptions": {
 		"completeUnimported": true,
 		"gofumpt": true,
 		"hoverKind": "SynopsisDocumentation",
+		"staticcheck": true,
 		"linksInHover": false
-	},
-	"typescript": {
-		"implementationsCodeLense.enable": false,
-		"referencesCodeLens.enable": false
-	},
-	"javascript": {
-		"implementationsCodeLense.enable": false,
-		"referencesCodeLens.enable": false
-	},
-	"Lua": {
-		"workspace.library": {
-			"/usr/share/nvim/runtime/lua": true,
-			"/usr/share/nvim/runtime/lua/vim": true,
-			"/usr/share/nvim/runtime/lua/vim/lsp": true
-		},
-		"diagnostics": {
-			"globals": ["vim"]
-		}
 	}
 }

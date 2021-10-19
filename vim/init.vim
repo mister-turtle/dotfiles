@@ -1,6 +1,4 @@
-
 so ~/.config/nvim/plugins.vim
-so ~/.config/nvim/word_processing.vim
 
 
 """"""""""""""""""""""
@@ -11,7 +9,6 @@ set title                             " Update the title of the terminal
 filetype off                          " Reset filetype detection first
 filetype plugin indent on             " Enable filetype detection
 set ttyfast                           " Fast terminal connection for faster redraw
-set ttyscroll=3                       " Speed up scrolling
 set laststatus=2                      " Always show the status line
 set encoding=utf-8                    " Set encoding to UTF-8
 set incsearch                         " Show match whilst typing
